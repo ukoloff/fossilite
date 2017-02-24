@@ -13,3 +13,27 @@ fossil http repo
 ```
 
 ### Groups
+
+Group contains **two** lists:
+included users and excluded ones.
+
+In/excluding user to group:
+
+Mode | Syntax
+:---:| ---
+  +  | user
+  -  | -user *or* !user
+
+In/excluding group to group:
+
+Included|Excluded|Syntax
+ :---:  |  :---: | ---
+    +   |    +   | N/A
+    +   |        | +@group
+    +   |    -   | @group
+        |    +   | +!@group
+        |        | N/A
+        |    -   | -!@group
+    -   |    +   | !@group
+    -   |        | -@group
+    -   |    -   | N/A
