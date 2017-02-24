@@ -21,7 +21,7 @@ In/excluding user to group:
 
 Mode | Syntax
 :---:| ---
-  +  | user
+  +  | user *or* +user
   -  | -user *or* !user
 
 In/excluding group to group:
